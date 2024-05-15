@@ -1,13 +1,41 @@
 ---
 import Button from "../primitives/Button.astro"
+import { Icon } from "astro-icon/components"
+
+type Socials = {
+    icon: string
+    link: string
+}
+
+const socials: Socials[] = [
+    {
+        icon: "prime:github",
+        link: "https://github.com/polaski0"
+    },
+]
 ---
 
-<nav class="flex flex-row justify-between items-center mt-12">
-    <a href=".">
-        <strong class="text-project-gray-950 text-xl">Meynard Trinidad</strong>
-        <p class="text-project-gray-500 text-sm">Web Developer</p>
-    </a>
-    <div>
-       <Button theme="light">Resume</Button> 
+<nav class="flex flex-row mt-12 gap-6 sm:items-center">
+    <div class="flex flex-col justify-between sm:flex-row sm:items-center gap-4 w-full">
+        <a href=".">
+            <strong class="text-project-gray-950">Meynard Trinidad</strong>
+            <p class="text-project-gray-500 text-sm">Web Developer</p>
+        </a>
+        <div class="flex flex-col gap-4 w-fit sm:flex-row sm:gap-6 sm:justify-center sm:items-center">
+            <ul class="flex flex-row gap-4">
+                {
+                    socials.map((social) => {
+                        return (
+                            <li class="flex">
+                                <a href={social.link} class="sm:p-2 text-project-gray-500 hover:text-project-gray-950 transition-colors duration-100">
+                                    <Icon name={social.icon} class={"w-8 h-8"} />
+                                </a>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
+        </div>
     </div>
+    <Button>Resume</Button> 
 </nav>

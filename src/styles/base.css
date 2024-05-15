@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 400;
+        src: url("/fonts/open-sans/OpenSans-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 700;
+        src: url("/fonts/open-sans/OpenSans-Bold.ttf");
+    }
+
+    html {
+        font-family: "Open Sans", sans-serif;
+    }
+}
