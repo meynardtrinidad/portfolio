@@ -1,0 +1,17 @@
+---
+interface Props {
+    theme?: "dark" | "light";
+}
+
+const { theme = "dark" } = Astro.props;
+---
+
+<button 
+    class=`${
+        theme === "dark" 
+            ? "bg-project-gray-950 text-white border-project-gray-950 hover:bg-project-gray-900" 
+            : "bg-white text-project-gray-950 border-project-gray-200 hover:bg-project-gray-50"
+        } flex gap-[6px] px-3 py-[6px] rounded-md border shadow-project-button transition-all delay-50`
+>
+    <slot/>
+</button>
