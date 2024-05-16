@@ -1,6 +1,7 @@
 ---
 import Button from "../primitives/Button.astro"
 import { Icon } from "astro-icon/components"
+import { BASE_URL } from "../../consts"
 
 type Socials = {
     icon: string
@@ -37,5 +38,7 @@ const socials: Socials[] = [
             </ul>
         </div>
     </div>
-    <Button>Resume</Button> 
+    <a href={`${BASE_URL}/resume`}>
+        <Button>Resume</Button> 
+    </a>
 </nav>
