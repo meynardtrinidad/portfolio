@@ -21,7 +21,7 @@ export default {
                 }
             },
             boxShadow: {
-                "project-button": `inset 0 2px 0 0 rgb(255 255 255 / 0.05), 0 1.5px 2px -1px rgb(0 0 0 / 0.25)`,
+                "project-button": `inset 0 2px 0 0 rgb(255 255 255 / 0.25), 0 1.5px 2px -1px rgb(0 0 0 / 0.25)`,
             },
             screens: {
                 xs: "320px",
