@@ -11,7 +11,7 @@ type Socials = {
 const socials: Socials[] = [
     {
         icon: "prime:github",
-        link: "https://github.com/polaski0"
+        link: "https://github.com/meynardtrinidad"
     },
 ]
 ---
@@ -20,7 +20,7 @@ const socials: Socials[] = [
     <div class="flex flex-col justify-between sm:flex-row sm:items-center gap-4 w-full">
         <a href=".">
             <strong class="text-project-gray-950">Meynard Trinidad</strong>
-            <p class="text-project-gray-500 text-sm">Web Developer</p>
+            <p class="text-project-gray-500 text-sm">Software Engineer</p>
         </a>
         <div class="flex flex-col gap-4 w-fit sm:flex-row sm:gap-6 sm:justify-center sm:items-center">
             <ul class="flex flex-row gap-4">
@@ -28,7 +28,7 @@ const socials: Socials[] = [
                     socials.map((social) => {
                         return (
                             <li class="flex">
-                                <a href={social.link} class="sm:p-2 text-project-gray-500 hover:text-project-gray-950 transition-colors duration-100">
+                                <a target="_blank" href={social.link} class="sm:p-2 text-project-gray-500 hover:text-project-gray-950 transition-colors duration-100">
                                     <Icon name={social.icon} class={"w-8 h-8"} />
                                 </a>
                             </li>
