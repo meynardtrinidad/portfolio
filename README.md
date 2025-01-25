@@ -5,7 +5,7 @@ Welcome to my portfolio! I'm Meynard Trinidad, a front-end developer.
 ## Todo
 
 - [ ] About
-    - [ ] Works / Projects
+  - [ ] Works / Projects
 - [ ] Blogs
 - [ ] Resume
 
