@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils"
 import { Slot } from "./slot"
 
 export interface ButtonProps
@@ -9,7 +10,7 @@ const Button = ({ asChild, className, children, ...props }: ButtonProps) => {
   const Comp = asChild ? Slot : "button"
   return (
     <Comp
-      className={className}
+      className={cn(className)}
       {...props}
     >
       {children}

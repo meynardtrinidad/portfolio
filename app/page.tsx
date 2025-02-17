@@ -1,14 +1,11 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Section } from "@/components/layout/section";
 
 export default function Page() {
   return (
-    <>
-      <Button asChild className="py-2 px-4">
-        <Link href={"/resume"}>
-          Resume
-        </Link>
-      </Button>
-    </>
+    <Section>
+      <p>
+        Welcome to my page.
+      </p>
+    </Section>
   );
 }
