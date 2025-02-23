@@ -1,11 +1,11 @@
-import { Section } from "@/components/layout/section";
+import { About } from "./_components/about";
+import { Work } from "./_components/work";
 
 export default function Page() {
   return (
-    <Section>
-      <p>
-        Welcome to my page.
-      </p>
-    </Section>
+    <>
+      <About />
+      <Work />
+    </>
   );
 }

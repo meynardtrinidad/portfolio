@@ -10,7 +10,7 @@ const Button = ({ asChild, className, children, ...props }: ButtonProps) => {
   const Comp = asChild ? Slot : "button"
   return (
     <Comp
-      className={cn(className)}
+      className={cn("bg-primary text-white rounded-md", className)}
       {...props}
     >
       {children}

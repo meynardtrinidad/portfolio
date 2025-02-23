@@ -1,16 +1,21 @@
 import { cn } from "@/lib/utils"
+import { Slot } from "../ui/slot"
 
 export interface SectionProps
-  extends React.HTMLAttributes<HTMLElement> { }
+  extends React.HTMLAttributes<HTMLElement> {
+  asChild?: boolean
+}
 
-const Section = ({ className, children, ...props }: SectionProps) => {
+const Section = ({ asChild, className, children, ...props }: SectionProps) => {
+  const Comp = asChild ? Slot : "section"
+
   return (
-    <section
-      className={cn("flex flex-col justify-center m-auto w-[678px]", className)}
+    <Comp
+      className={cn("flex flex-col justify-center mt-16 w-[678px] gap-[10px]", className)}
       {...props}
     >
       {children}
-    </section>
+    </Comp>
   )
 }
 

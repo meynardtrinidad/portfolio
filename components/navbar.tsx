@@ -1,14 +1,20 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
+import { cn } from "@/lib/utils"
 
-const Navbar = () => {
+interface NavbarProps
+  extends React.HTMLAttributes<HTMLElement> { }
+
+const Navbar = ({ className, ...props }: NavbarProps) => {
   return (
-    <nav className="flex items-center justify-between">
-      <h1>
-        <span>
-          Meynard Trinidad
-        </span>
-      </h1>
+    <nav
+      className={cn("flex flex-row items-center justify-between", className)}
+      {...props}
+    >
+      <Link href={"/"}>
+        <h1 className="font-bold">Meynard Trinidad</h1>
+        <span className="text-secondary">Software Engineer</span>
+      </Link>
       <Button asChild className="py-2 px-4">
         <Link href={"/resume"}>
           Resume
