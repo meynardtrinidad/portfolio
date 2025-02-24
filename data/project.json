@@ -1,0 +1,14 @@
+{
+  "contents": [
+    {
+      "title": "JTR IT Solutions",
+      "description": "A minimalist landing page created for JTR IT.",
+      "link": "/uiandthings"
+    },
+    {
+      "title": "Barangay Management System",
+      "description": "A record management system for a local municipality.",
+      "link": "/barangay-management-system"
+    }
+  ]
+}

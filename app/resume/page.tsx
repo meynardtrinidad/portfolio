@@ -1,8 +1,10 @@
+import { Back } from "@/components/back";
 import { Section } from "@/components/layout/section";
 
 export default function Page() {
   return (
     <Section>
+      <Back />
       <div className="relative text-black">
         <div className="-translate-x-[69px] bg-white w-[612pt] p-16 font-serif">
           <section className="flex flex-col justify-center items-center w-full">
