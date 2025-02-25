@@ -1,6 +1,6 @@
 import { Card } from "@/components/card"
 import { Section } from "@/components/layout/section"
-import data from "@/data/project.json"
+import data from "@/data/projects.json"
 import Link from "next/link"
 
 const PATH = "/projects"

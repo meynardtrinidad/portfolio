@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Section } from "@/components/layout/section";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -29,6 +30,9 @@ export default function RootLayout({
             <Navbar />
           </Section>
           {children}
+          <Section asChild className="flex-row items-center justify-between">
+            <Footer />
+          </Section>
         </main>
       </body>
     </html>

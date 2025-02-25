@@ -1,5 +1,5 @@
 import { Section } from "@/components/layout/section"
-import data from "@/data/work.json"
+import data from "@/data/works.json"
 import { cn } from "@/lib/utils"
 
 const isActive = (status: string) => {

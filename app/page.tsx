@@ -1,6 +1,7 @@
 import { About } from "./_components/about";
-import { Project } from "./_components/project";
-import { Work } from "./_components/work";
+import { Others } from "./_components/others";
+import { Project } from "./_components/projects";
+import { Work } from "./_components/works";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <About />
       <Work />
       <Project />
+      <Others />
     </>
   );
 }
