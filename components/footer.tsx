@@ -10,7 +10,7 @@ const Footer = ({ className, ...props }: FooterProps) => {
       {...props}
     >
       <p>{new Date().getFullYear()}</p>
-      <p>Stay Curious.</p>
+      <p className="italic">"Stay curious."</p>
     </footer>
   )
 }
