@@ -1,4 +1,5 @@
 import { Section } from "@/components/layout/section"
+import data from "@/data/links.json"
 import Link from "next/link"
 
 const About = () => {
@@ -15,24 +16,27 @@ const About = () => {
       <div className="flex flex-col gap-[10px] mt-8">
         <div className="flex flex-row text-secondary">
           <Link
-            href={"https://www.linkedin.com"}
+            href={data.linked_in.link}
             className="underline"
+            target="_blank"
           >
-            LinkedIn
+            {data.linked_in.label}
           </Link>
           <span className="mr-2">,</span>
           <Link
-            href={"https://www.github.com"}
+            href={data.github.link}
             className="underline"
+            target="_blank"
           >
-            GitHub
+            {data.github.label}
           </Link>
           <span className="mr-2">,</span>
           <Link
-            href={"mailto:meynardjulientrinidad@gmail.com"}
+            href={data.email.link}
             className="underline"
+            target="_blank"
           >
-            meynardjulientrinidad@gmail.com
+            {data.email.label}
           </Link>
         </div>
       </div>

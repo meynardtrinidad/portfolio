@@ -6,7 +6,7 @@ interface CardProps
 const Card = ({ className, ...props }: CardProps) => {
   return (
     <div
-      className={cn(className)}
+      className={cn("hover:bg-black/5 rounded-md transition-colors p-4 -m-4", className)}
       {...props}
     />
   )

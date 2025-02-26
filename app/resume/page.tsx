@@ -1,5 +1,7 @@
 import { Back } from "@/components/back";
 import { Section } from "@/components/layout/section";
+import links from "@/data/links.json"
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -14,26 +16,29 @@ export default function Page() {
             <p>
               <span>+63 921 319 7669</span>
               <span> | </span>
-              <a
+              <Link
                 className="text-blue-500"
-                href="mailto:meynardjulientrinidad@gmail.com"
+                href={links.email.link}
+                target="_blank"
               >
-                meynardjulientrinidad@gmail.com
-              </a>
+                {links.email.label}
+              </Link>
               <span> | </span>
-              <a
+              <Link
                 className="text-blue-500"
-                href="https://www.google.com/url?q=https://www.linkedin.com/in/meynard-trinidad-bb172a184/&sa=D&source=editors&ust=1737698372110015&usg=AOvVaw2y_iveCcWp10I2gV_mDcvo"
+                href={links.linked_in.link}
+                target="_blank"
               >
-                LinkedIn
-              </a>
+                {links.linked_in.label}
+              </Link>
               <span> | </span>
-              <a
+              <Link
                 className="text-blue-500"
-                href="https://www.google.com/url?q=https://github.com/meynardtrinidad&sa=D&source=editors&ust=1737698372110598&usg=AOvVaw1fN_yeGwdXuT2sFeBys9QN"
+                href={links.github.link}
+                target="_blank"
               >
-                GitHub
-              </a>
+                {links.github.label}
+              </Link>
             </p>
           </section>
 

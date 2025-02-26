@@ -6,7 +6,7 @@ interface FooterProps
 const Footer = ({ className, ...props }: FooterProps) => {
   return (
     <footer
-      className={cn("text-secondary mb-16", className)}
+      className={cn("text-secondary pt-16 mb-16", className)}
       {...props}
     >
       <p>{new Date().getFullYear()}</p>

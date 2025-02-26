@@ -25,12 +25,12 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} antialiased bg-background`}
       >
-        <main className="flex flex-col justify-center items-center w-full">
+        <main className="flex flex-col items-center w-full h-full min-h-screen">
           <Section asChild className="flex-row items-center justify-between">
             <Navbar />
           </Section>
           {children}
-          <Section asChild className="flex-row items-center justify-between">
+          <Section asChild className="mt-auto flex-row items-center justify-between">
             <Footer />
           </Section>
         </main>
